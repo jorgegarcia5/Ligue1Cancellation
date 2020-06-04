@@ -26,17 +26,37 @@ You can also **knit** the document from the command line, see the example in the
 
 ```{r}
 summary(dt)
+mean(dt$polarity[dt$french=="TRUE"])
+mean(dt$polarity[dt$french=="FALSE"])
+mean(dt$polarity)
 ```
 
 ### Plots
 
 ```{r}
 hist(dt$polarity)
+plot(dt$polarity, dt$french, 
+        main="Plot of the polarity of french and non-french tweets",
+        xlab="Level of polarity",
+        ylab="'French' TRUE or FALSE")
+hist((dt$polarity[dt$french=="TRUE"]), 
+     main="Histogram of polarity of french-written tweets",
+     xlab="Level of polarity")
+hist((dt$polarity[dt$french=="FALSE"]),
+     main="Histogram of polarity of non-french-written tweets",
+     xlab="Level of polarity")
 ```
 
 ```{r}
 # Overlaid histograms
-ggplot(dt, aes(x=polarity, color=retweet)) +
-  geom_histogram(fill="white", alpha=0.5, position="identity") + ggtitle('Some histogram')
+ggplot(dt, aes(x=polarity, color=french)) +
+  geom_histogram(fill="white", alpha=0.5, position="identity") + ggtitle('Histogram of Polarity for French and non French tweets superposed')
 ```
 
+### Linear Relationship Analysis
+
+```{r}
+cor(dt$polarity, dt$french)
+lr = lm(dt$polarity ~ dt$french, d=dt)
+summary(lr)
+```

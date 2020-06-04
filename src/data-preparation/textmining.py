@@ -11,15 +11,15 @@ for i, j in data.iterrows():
     try:
         blob = TextBlob(j['text'])
         data.loc[i, 'polarity'] = blob.sentiment.polarity
-        data.loc[i, 'subjectivity'] = blob.sentiment.subjectivity
+        data.loc[i, 'nwords'] = len(blob.words)
     except:
         data.loc[i, 'polarity'] = ''
-        data.loc[i, 'subjectivity'] = ''
+        data.loc[i, 'nwords'] = ''
 
 data.head()
 
 os.makedirs('../../gen/data-preparation/output/', exist_ok=True)
 
-data.to_csv('../../gen/data-preparation/output/dataset.csv', index = False)
+data.to_csv('../../gen/data-preparation/output/dataset.csv', sep='\t', encoding='utf-8', index = False)
 
 print('done.')
