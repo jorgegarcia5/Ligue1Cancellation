@@ -2,7 +2,7 @@
 Study of the linkage between the language of tweets and the reactions to the cancellation of the French Ligue 1. Data collected from 5.325 tweets in a timeframe of approximately 5 hours (April 28th, 2020 from 16:38 to 21:19 CEST), through the Twitter API.
 
 
-Work by Team 09 of Research in Social Media course (2020), guided by Hannes Datta and generated from his workflow:
+Work by Team 09 of Research in Social Media course (2020), guided by dr. Hannes Datta and generated from his workflow:
 
 
 
