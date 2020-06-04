@@ -1,5 +1,19 @@
 # Is the type of reaction to the Ligue 1 cancellation linked to the language of the tweet (French vs not French)?
+Study of the linkage between the tweet language and the reaction to the cancellation of the French Ligue 1. Data collected from 5.325 tweets in a timeframe of approximately 5 hours (April 28th, 2020 from 16:38 to 21:19 CEST), through the Twitter API.
+
+
 Work by Team 09 of Research in Social Media course, guided by Hannes Datta and generated from his workflow: 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
