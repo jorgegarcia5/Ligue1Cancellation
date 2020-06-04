@@ -1,3 +1,8 @@
+# Is the type of reaction to the Ligue 1 cancellation linked to the language of the tweet (French vs not French)?
+Work by Team 09 of Research in Social Media course, guided by Hannes Datta and generated from his workflow: 
+
+
+
 # Example of a reproducible research workflow: JSON parsing and text mining in Python, R + RMarkdown
 
 This is a basic example workflow using GNU Make, Python and R for a reproducible research workflow, following the principles of [tilburgsciencehub.com](http://tilburgsciencehub.com/workflow). Please use this template in combination with our tutorial at [http://tilburgsciencehub.com/tutorial](http://tilburgsciencehub.com/tutorial).
